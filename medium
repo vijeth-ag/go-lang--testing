@@ -1,0 +1,20 @@
+> go test
+
+Go has in-built Testing package using import "testing"
+
+Setup:
+    - Test files need to have suffix _test.go, so that go test command will run all the files with _test.go prefix
+    - In _test files Function name should be of the format Test<FunctionName>  for Ex. TestAddition, here Addition func is being tested
+
+Running tests
+    - Basic test can be run using "go test" command - prints pass/fail and time taken, if any fails prints it out
+    - Verbose flag "go test -v" v for verbose, will run test with more detailed output, lists all testNames and time taken individually
+    - we can run only a required test function using -run flag. 
+        Example "go test -run=TestMultiplication" will only run TestMultiplication and not the whole _test file
+
+    - Test Coverage
+        + "go test -cover" will run tests and prints coverage in %
+        + cover has more options to output to html etc 
+
+
+
