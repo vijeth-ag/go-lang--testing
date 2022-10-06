@@ -34,6 +34,10 @@ func Multiplication(numbers ...int) int {
 	return result
 }
 
+func SomeFunc() {
+	log.Println("no test coverage")
+}
+
 func main() {
 
 }
